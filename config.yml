@@ -1,0 +1,16 @@
+title: Warehouse application
+description: This is an applicaiton for organizing a Warehouse.
+template:
+  repo: warehouse-application-template
+  name: warehouse-application
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
